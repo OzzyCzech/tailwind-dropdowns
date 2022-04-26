@@ -1,8 +1,8 @@
 # Tailwind dropdowns
 
-Simple Tailwind dropdown menu with Vanilla JS.
+Simple dropdown with Tailwind and Vanilla JS
 
-![Simple Tailwind dropdown menu](menu.png)
+![Simple dropdown with Tailwind](menu.png)
 
 ## Install
 
