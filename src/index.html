@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="dropdown-menu.js" type="module"></script>
+   <script src="https://cdn.tailwindcss.com"></script>
+	<title>Example dropdown-menu document</title>
+</head>
+<body>
+  <main class="container mx-auto my-6">
+    <button data-dropdown="userMenu" aria-expanded="false" class="border rounded py-2 px-3 shadow">
+      Show menu
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="inline ml-1" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+      </svg>
+    </button>
+    <div 
+      id="userMenu"
+      class="hidden z-50 w-60 text-base bg-white rounded divide-y divide-gray-200 md:border md:dark:border-gray-600 md:drop-shadow-md dark:bg-gray-700 dark:divide-gray-600 focus:outline-none">
+      <ul>
+        <li>
+          <a href="/" class="block rounded-t py-3 px-4 text-sm text-gray-800 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Home</a>
+        </li>
+        <li>
+          <a href="/about" class="block rounded-t py-3 px-4 text-sm text-gray-800 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">About</a>
+        </li>
+        <li>
+          <a href="/contact" class="block rounded-t py-3 px-4 text-sm text-gray-800 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Contact</a>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <a href="/facebook" class="block rounded-t py-3 px-4 text-sm text-gray-800 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Facebook</a>
+        </li>
+      </ul>
+    </div>
+  </main>
+</body>
+</html>
